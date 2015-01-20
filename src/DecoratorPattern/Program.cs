@@ -10,6 +10,14 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
+            var orderedPizzas = GetOrder();
+            PrintOrder(orderedPizzas);
+
+            Console.ReadLine();
+        }
+        
+        private static IEnumerable<Pizza> GetOrder()
+        {
             var orderedPizzas = new List<Pizza>()
             {
                 new Hawaii(), 
@@ -20,17 +28,20 @@ namespace DecoratorPattern
                 new DiscountVoucher(new Tuna(), 5)
             };
 
+            return orderedPizzas;
+        }
+
+        private static void PrintOrder(IEnumerable<Pizza> orderedPizzas)
+        {
             foreach (Pizza pizza in orderedPizzas)
             {
-                Console.WriteLine(pizza.GetName() 
-                                  + " kostet " 
-                                  + pizza.GetPriceInCents() / 100 
-                                  + "," 
-                                  + string.Format("{0:00}", pizza.GetPriceInCents() % 100) 
+                Console.WriteLine(pizza.GetName()
+                                  + " kostet "
+                                  + pizza.GetPriceInCents() / 100
+                                  + ","
+                                  + string.Format("{0:00}", pizza.GetPriceInCents() % 100)
                                   + " Euro.");
             }
-
-            Console.ReadLine();
         }
     }
 }
