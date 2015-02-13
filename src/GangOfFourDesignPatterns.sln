@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{C2235F40-E756-4F78-A9FA-142F9F8DEB80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightPattern", "FlyweightPattern\FlyweightPattern.csproj", "{075671FB-C211-4FFD-8BE5-DC3572377C9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{C2235F40-E756-4F78-A9FA-142F9F8DEB80}.Debug|x86.Build.0 = Debug|x86
 		{C2235F40-E756-4F78-A9FA-142F9F8DEB80}.Release|x86.ActiveCfg = Release|x86
 		{C2235F40-E756-4F78-A9FA-142F9F8DEB80}.Release|x86.Build.0 = Release|x86
+		{075671FB-C211-4FFD-8BE5-DC3572377C9A}.Debug|x86.ActiveCfg = Debug|x86
+		{075671FB-C211-4FFD-8BE5-DC3572377C9A}.Debug|x86.Build.0 = Debug|x86
+		{075671FB-C211-4FFD-8BE5-DC3572377C9A}.Release|x86.ActiveCfg = Release|x86
+		{075671FB-C211-4FFD-8BE5-DC3572377C9A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
